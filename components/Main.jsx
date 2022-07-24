@@ -33,7 +33,7 @@ const Main = () => {
           </p>
           <p>welcome use one of these channel to contact me...</p>
         </div>
-        <ContactWidget contactOpen={contactOpen} setContactOpen={setContactOpen} />
+        <ContactWidget />
       </div>
       <div className={styles.right}>
         <div className={styles.imgContainer}>

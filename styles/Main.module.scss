@@ -8,7 +8,7 @@
   padding: 1rem 3rem;
   width: 100vw;
   height: calc(100vh - 60px);
-  margin-bottom: 50px;
+  /*   margin-bottom: 3rem; */
 }
 
 .left {
@@ -28,7 +28,7 @@
 }
 
 .name {
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: $newFont;
   font-size: 2.5rem;
 }
 
@@ -125,15 +125,6 @@
 
   .name {
     font-size: 2rem;
-  }
-
-  .contact {
-    width: 90vw;
-    flex-wrap: wrap;
-  }
-
-  .contact_gmail {
-    transform: translate(10px, 5px);
   }
 
   .right {

@@ -70,11 +70,11 @@ const About = () => {
             </div>
             <div className={styles.right}>
                 <section className={styles.section}>
-                    <p>Skills</p>
+                    <p className={styles.titleL}>Skills</p>
                     <Icons />
                 </section>
                 <section className={styles.section}>
-                    <p>Languages</p>
+                    <p className={styles.titleL}>Languages</p>
                     <div className={styles.languages}>
                         <div className={`${styles.language} ${styles.border}`}>
                             Turkish
