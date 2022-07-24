@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ContactInfo from "../components/ContactInfo";
 import Main from "../components/Main";
 import Portfolio from "../components/Portfolio";
 import styles from "../styles/Home.module.scss";
@@ -19,6 +20,7 @@ export default function Home() {
       <div className={styles.container}>
         <Main />
         <Portfolio />
+        <ContactInfo />
       </div>
     </>
   );

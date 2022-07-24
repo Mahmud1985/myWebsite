@@ -32,47 +32,6 @@
   font-size: 2.5rem;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //border styles from border class defined at Variables scss file
-  border-radius: 10px;
-  padding: 5px;
-
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    cursor: pointer;
-
-
-
-    &:hover {
-      transition: $transition;
-      transform: scale(1.1);
-    }
-
-  }
-}
-
-.contact_gmail {
-  //border styles from border class defined at Variables scss file
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  transition: all 1s ease;
-  transform: translate(10px, 20px) rotate(5deg);
-
-  &:hover {
-    transition: all 1s ease;
-    transform:
-      /* translate(10px, 20px)  */
-      rotate(0deg);
-  }
-}
-
 .right {
   flex: 2;
 }
