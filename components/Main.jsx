@@ -3,13 +3,12 @@ import main_img from "../public/img/main_img.png";
 import Image from "next/image";
 import { MyThemeContext } from "../context/themeContext";
 
-import { useState } from "react";
 import Icons from "./Icons";
 import ContactWidget from "./ContactWidget";
 
 const Main = () => {
   const [{ darkMode }] = MyThemeContext();
-  const [contactOpen, setContactOpen] = useState(false);
+
   const backgroundStyle = {
     bgColor: {
       backgroundColor: darkMode ? "#5c6f70" : "#abf7f7",

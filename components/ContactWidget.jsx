@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "../styles/ContactWidget.module.scss";
 import EmailIcon from "@mui/icons-material/Email";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsappIcon from "@mui/icons-material/WhatsApp";
-const ContactWidget = ({ contactOpen, setContactOpen }) => {
+const ContactWidget = () => {
+    const [contactOpen, setContactOpen] = useState(false);
     return (
         <>
             <div className={`${styles.contact} ${styles.border}`}>
