@@ -3,6 +3,7 @@ import styles from "../styles/ContactInfo.module.scss"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsappIcon from "@mui/icons-material/WhatsApp";
+import ContactWidget from './ContactWidget';
 const ContactInfo = ({ style = {} }) => {
     console.log(style.marginTop)
     return (
@@ -19,6 +20,7 @@ const ContactInfo = ({ style = {} }) => {
                     <p className={styles.location}><LocationOnIcon /><span >Istanbul-Turkiye</span ></p>
                     <p className={styles.email}><EmailIcon /><span >mahmudkasgari85@gmail.com</span ></p>
                     <p className={styles.whatsapp}><WhatsappIcon /><span >+905511512456</span ></p>
+                    <ContactWidget />
                 </div>
                 <div className={styles.right}>
                     <form className={styles.form}>
