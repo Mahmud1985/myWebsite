@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
     </div>
     <footer className={styles.footer}>
-      Made with ❤️, By  Mahmud Kaşgari, Open sourced on  <GitHubIcon />github Link here
+      Made with ❤️, By  <strong>Mahmud Kaşgari</strong> , Open sourced on  <a href="https://github.com/Mahmud1985/myWebsite" target="_blank"><GitHubIcon /></a>
     </footer>
   </div >
 };
