@@ -1,0 +1,49 @@
+@import "./Variables.module.scss";
+
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 1rem;
+
+}
+
+.icons {
+    padding: 1rem;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 1rem;
+    //border styles from border class defined at Variables scss file
+}
+
+.icon {
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        transition: $transition;
+        /*    transform: scale(1.1) translate(-100%, -100%); */
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width:820px) {
+    .iconContainer {
+        height: auto;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .iconContainer {
+        flex-direction: row;
+    }
+}

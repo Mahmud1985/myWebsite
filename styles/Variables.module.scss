@@ -18,4 +18,8 @@ $newFont: 'Edu NSW ACT Foundation', cursive;
   border: 1px solid $lightgray;
   border-width: 0.3rem;
   border-style: outset;
+
+  &:hover {
+    border-style: inset;
+  }
 }

@@ -11,7 +11,7 @@
   z-index: 999;
 }
 
-.logo {
+.logo>h1 {
   flex: 1;
   margin-left: 1rem;
   cursor: pointer;
@@ -35,7 +35,6 @@
   align-items: center;
   width: 90%;
   font-size: 1.5em;
-  cursor: pointer;
 }
 
 .active {
@@ -44,6 +43,7 @@
 
 .links>li {
   transition: $transition;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-3px);
