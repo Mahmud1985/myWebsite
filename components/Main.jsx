@@ -15,6 +15,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsappIcon from "@mui/icons-material/WhatsApp";
 import { useState } from "react";
+import Icons from "./Icons";
 
 const Main = () => {
   const [{ darkMode }] = MyThemeContext();
@@ -25,37 +26,6 @@ const Main = () => {
       opacity: darkMode ? 0.75 : 0.85,
     },
   };
-
-  const icons = [
-    {
-      name: "react",
-      src: react,
-    },
-    {
-      name: "nextjs",
-      src: nextjs,
-    },
-    {
-      name: "nodejs",
-      src: nodejs,
-    },
-    {
-      name: "redux",
-      src: redux,
-    },
-    {
-      name: "html5",
-      src: html5,
-    },
-    {
-      name: "css3",
-      src: css3,
-    },
-    {
-      name: "javascript",
-      src: javascript,
-    },
-  ];
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -102,20 +72,7 @@ const Main = () => {
               alt=""
             />
           </div>
-          <div className={styles.iconContainer}>
-            {icons.map((item, i) => (
-              <div className={`${styles.icons} ${styles.border}`} key={i}>
-                <Image
-                  className={styles.icon}
-                  src={item.src}
-                  objectFit="contain"
-                  layout="fill"
-                  style={backgroundStyle.bgColor}
-                  alt={item.name}
-                />
-              </div>
-            ))}
-          </div>
+          <Icons />
         </div>
       </div>
     </div>

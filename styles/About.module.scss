@@ -1,0 +1,92 @@
+@import "./Variables.module.scss";
+
+.container {
+    height: calc(100vh - 60px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.titleL {
+    margin: 0;
+    padding: 0;
+}
+
+.desc {
+    width: 90%;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+}
+
+.titleS {
+    font-size: 1.5rem;
+}
+
+.right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    p {
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.languages {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.language {
+    width: 30%;
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 1rem;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:820px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .language {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+}
