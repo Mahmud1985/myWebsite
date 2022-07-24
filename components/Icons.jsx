@@ -6,6 +6,8 @@ import nodejs from "../public/img/nodejs.svg";
 import redux from "../public/img/redux.svg";
 import html5 from "../public/img/html5.svg";
 import css3 from "../public/img/css3.svg";
+import mongodb from "../public/img/mongodb.svg";
+import firebase from "../public/img/firebase.svg";
 import javascript from "../public/img/javascript.svg";
 import Image from "next/image";
 import { MyThemeContext } from "../context/themeContext";
@@ -48,6 +50,15 @@ const Icons = () => {
             name: "javascript",
             src: javascript,
         },
+        {
+            name: "mongodb",
+            src: mongodb,
+        }
+        ,
+        {
+            name: "firebase",
+            src: firebase,
+        }
     ];
     return (
         <div className={styles.iconContainer}>
