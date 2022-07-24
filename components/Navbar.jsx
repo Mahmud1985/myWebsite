@@ -82,7 +82,9 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <h1>LOGO</h1>
+        <Link href={'/'}>
+          <h1>M.K.Dev</h1>
+        </Link>
       </div>
       <div className={styles.nav__Links}>
         <ul className={styles.links}>

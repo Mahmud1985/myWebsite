@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $lightgray;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -12,6 +13,13 @@
 
 .logo {
   flex: 1;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+  }
 }
 
 .nav__Links {
@@ -23,8 +31,9 @@
 
 .links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  width: 90%;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -44,6 +53,7 @@
 
 .hamburger {
   display: none;
+  margin-right: 10px;
 }
 
 .menu__nav {

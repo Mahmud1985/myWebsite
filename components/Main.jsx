@@ -74,7 +74,7 @@ const Main = () => {
           </p>
           <p>welcome use one of these channel to contact me...</p>
         </div>
-        <div className={styles.contact}>
+        <div className={`${styles.contact} ${styles.border}`}>
           <span onClick={() => setContactOpen(!contactOpen)}>
             Gmail: <EmailIcon />
           </span>
@@ -88,11 +88,11 @@ const Main = () => {
             Whatsapp: <WhatsappIcon />
           </span>
         </div>
-        {contactOpen && (<div className={styles.contact_gmail} >mahmudkasgari85@gmail.com</div>)}
+        {contactOpen && (<div className={`${styles.contact_gmail} ${styles.border}`} >mahmudkasgari85@gmail.com</div>)}
       </div>
       <div className={styles.right}>
         <div className={styles.imgContainer}>
-          <div className={styles.main_img}>
+          <div className={`${styles.main_img} ${styles.border}`}>
             <Image
               className={styles.img}
               style={backgroundStyle.bgColor}
@@ -104,7 +104,7 @@ const Main = () => {
           </div>
           <div className={styles.iconContainer}>
             {icons.map((item, i) => (
-              <div className={styles.icons} key={i}>
+              <div className={`${styles.icons} ${styles.border}`} key={i}>
                 <Image
                   className={styles.icon}
                   src={item.src}
