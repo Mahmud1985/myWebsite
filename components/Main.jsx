@@ -21,7 +21,7 @@ const Main = () => {
         <div className={styles.desc}>
           <h1>Hi, I am <span className={styles.name}>Mahmud Kaşgari</span></h1>
           <p>
-            I'm a <i>full-stack</i> web developer.
+            I`m a <i>full-stack</i> web developer.
           </p>
           <p>
             Recently I engage in <strong>Next.js</strong> which is my favorite web

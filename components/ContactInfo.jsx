@@ -13,9 +13,9 @@ const ContactInfo = ({ style = {} }) => {
             </div>
             <div className={styles.contactContainer}>
                 <div className={styles.left}>
-                    <span className={styles.left_title}>Let's connect</span>
+                    <span className={styles.left_title}>Let`s connect</span>
                     <p>
-                        Do you want a new website or upgrade exist one ? If you have a question, don't hesitate to contact me.
+                        Do you want a new website or upgrade exist one ? If you have a question, don`t hesitate to contact me.
                     </p>
                     <p className={styles.location}><LocationOnIcon /><span >Istanbul-Turkiye</span ></p>
                     <p className={styles.email}><EmailIcon /><span >mahmudkasgari85@gmail.com</span ></p>

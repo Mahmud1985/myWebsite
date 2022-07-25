@@ -10,7 +10,7 @@ export default function Home({ cards }) {
   return (
     <>
       <Head>
-        <title>Mahmud Kaşgari's Personal Website.</title>
+        <title>Mahmud Kaşgari`s Personal Website.</title>
         <meta
           name="This is Mahmud Kaşgari's Personal Website."
           content="Mahmud Kaşgari"

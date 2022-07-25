@@ -1,6 +1,6 @@
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Toggler from "./Toggler";
 import { MyThemeContext } from "../context/themeContext";
 import { actionType } from "../context/reducer";
@@ -78,7 +78,7 @@ const Navbar = () => {
         document.body.classList.add("light");
       }
     }
-  }, []);
+  }, [dispatch]);
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
