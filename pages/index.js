@@ -29,7 +29,7 @@ export default function Home({ cards }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await axios.get("/api/projects")
+  const res = await axios.get("https://mkdev-rouge.vercel.app/api/projects")
   //console.log("res:", res.data)
   return {
     props: {
