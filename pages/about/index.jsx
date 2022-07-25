@@ -55,7 +55,7 @@ const About = () => {
                 <h1 className={styles.titleL}>About Me</h1>
                 <div className={styles.desc}>
                     <p>
-                        I am a Frontend Developer based in <b>Istanbul - Turkey</b> , Who likes to provide solutions for people's projects and businesses which it is a challenge that I enjoy overcoming.</p>
+                        I am a Frontend Developer based in <b>Istanbul - Turkey</b> , Who likes to provide solutions for people`s projects and businesses which it is a challenge that I enjoy overcoming.</p>
 
                     <p>
                         I am a passionate person who pursues his dreams, who works hard and who is results oriented. As a matter of fact, I constantly work on improving myself seeking to achieve the best version of myself.
