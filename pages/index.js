@@ -1,10 +1,12 @@
+import axios from "axios";
 import Head from "next/head";
 import ContactInfo from "../components/ContactInfo";
 import Main from "../components/Main";
 import Portfolio from "../components/Portfolio";
 import styles from "../styles/Home.module.scss";
 
-export default function Home() {
+
+export default function Home({ cards }) {
   return (
     <>
       <Head>
@@ -19,9 +21,19 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Main />
-        <Portfolio />
+        <Portfolio cards={cards} />
         <ContactInfo />
       </div>
     </>
   );
+}
+
+export const getServerSideProps = async () => {
+  const res = await axios.get("http://localhost:3000/api/projects")
+  //console.log("res:", res.data)
+  return {
+    props: {
+      cards: res.data
+    }
+  }
 }
