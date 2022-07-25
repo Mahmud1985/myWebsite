@@ -18,7 +18,7 @@ const Project = ({ card }) => {
 export const getServerSideProps = async ({ params }) => {
     //console.log(params.id);
     const res = await axios.get(
-        `http://localhost:3000/api/projects/${params.id}`
+        `mkdev-rouge.vercel.app/api/projects/${params.id}`
     );
     //console.log("res from project ", res.data)
     return {
