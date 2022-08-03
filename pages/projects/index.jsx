@@ -11,7 +11,11 @@ const Projects = ({ cards }) => {
 }
 
 export const getServerSideProps = async () => {
-    const res = await axios.get("https://mkdev-rouge.vercel.app/api/projects")
+    const API_URL = process.env.LOCAL_URL || process.env.HOST_URL;
+    const res = await axios.get(
+        `${API_URL}/api/projects`
+    );
+
     //console.log("res:", res.data)
     return {
         props: {

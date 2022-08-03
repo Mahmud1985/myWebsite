@@ -17,7 +17,6 @@ export default function Home({ cards }) {
         />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
         <Main />
@@ -29,7 +28,7 @@ export default function Home({ cards }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await axios.get("https://mkdev-rouge.vercel.app/api/projects")
+  const res = await axios.get("http://localhost:3000/api/projects")
   //console.log("res:", res.data)
   return {
     props: {

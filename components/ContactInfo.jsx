@@ -1,11 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "../styles/ContactInfo.module.scss"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsappIcon from "@mui/icons-material/WhatsApp";
 import ContactWidget from './ContactWidget';
+import axios from 'axios';
 const ContactInfo = ({ style = {} }) => {
-    console.log(style.marginTop)
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [title, setTitle] = useState('');
+    const [message, setMessage] = useState('');
+    const [result, setResult] = useState(null);
+
+    const handleClick = async (e) => {
+        e.preventDefault();
+        const data = {
+            name,
+            email,
+            title,
+            message,
+        }
+
+        //const JSONdata = JSON.stringify(data);
+        const endpoint = '/api/form';
+        try {
+            const res = await axios.post(endpoint, data);
+            //console.log(res.data)
+            setResult(res.data.message);
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <div className={styles.container}>
             <div className={styles.title} style={style}>
@@ -23,14 +49,15 @@ const ContactInfo = ({ style = {} }) => {
                     <ContactWidget />
                 </div>
                 <div className={styles.right}>
-                    <form className={styles.form}>
-                        <input className={styles.form_item} type="text" placeholder="Your Name" />
-                        <input className={styles.form_item} type="email" placeholder="Your Email" />
-                        <input className={styles.form_item} type="text" placeholder="Subject" />
-                        <textarea className={styles.form_textarea} placeholder="Message" rows={5}></textarea>
-                        <input className={styles.form_button} type="submit" value="Submit" />
+                    <form className={styles.form} onSubmit={handleClick}>
+                        <input className={styles.form_item} type="text" value={name} placeholder="Your Name" required minLength={3} onChange={(e) => setName(e.target.value)} />
+                        <input className={styles.form_item} type="email" value={email} placeholder="Your Email" required onChange={(e) => setEmail(e.target.value)} />
+                        <input className={styles.form_item} type="text" value={title} placeholder="Subject" required minLength={5} maxLength={350} onChange={(e) => setTitle(e.target.value)} />
+                        <textarea className={styles.form_textarea} value={message} placeholder="Message" rows={5} required maxLength={1000} onChange={(e) => setMessage(e.target.value)} ></textarea>
+                        <button className={`${styles.form_button} ${styles.border}`} type="submit" >Submit</button >
 
                     </form>
+                    {result && <div className={styles.result}>{result}</div>}
                 </div>
             </div></div>
     )
