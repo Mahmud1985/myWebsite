@@ -1,11 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-import { actionType } from "../context/reducer";
-
-//import styles from "../styles/darkMode.scss";
-//className={darkMode ? styles.dark : styles.light}
 export default function Document() {
-  //const [{ darkMode }, dispatch] = useStateValue();
+
   return (
     <Html>
       <Head>
