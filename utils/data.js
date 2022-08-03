@@ -21,7 +21,7 @@ const cards = [{
     name: "project 4",
     img: "/portfolio/mock4.png",
     desc: "This is my portfolio website about me and my projects. It builds with Next.js and Scss. I added dark mode option for this projects and I want it as simple as possible, because it aims to display my projects on it. ",
-    url: "mkdev-rouge.vercel.app"
+    url: "https://mkdev-rouge.vercel.app"
 },
 {
     id: 5,
