@@ -2,7 +2,7 @@ const cards = [{
     id: 1,
     name: "project 1",
     img: "/portfolio/mock1.png",
-    desc: "description about this project 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ratione at distinctio totam explicabo eos, dolorum voluptatem labore incidunt, deleniti sint obcaecati velit ipsa perferendis officia a qui impedit veniam!",
+    desc: "This is Youtube-clone project build with MERN(Mongo DB, Express.js , React.js , Node.js). for styleing this time I used styled components."
 },
 {
     id: 2,
