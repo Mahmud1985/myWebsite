@@ -2,7 +2,8 @@ const cards = [{
     id: 1,
     name: "project 1",
     img: "/portfolio/mock1.png",
-    desc: "This is Youtube-clone project build with MERN(Mongo DB, Express.js , React.js , Node.js). for styleing this time I used styled components."
+    desc: "This is Youtube-clone project build with MERN(Mongo DB, Express.js , React.js , Node.js). for styleing this time I used styled components.",
+    url: "https://youtube-gamma-eosin.vercel.app/"
 },
 {
     id: 2,
