@@ -2,7 +2,7 @@ const cards = [{
     id: 1,
     name: "project 1",
     img: "/portfolio/mock1.png",
-    desc: "This is Youtube-clone project build with MERN(Mongo DB, Express.js , React.js , Node.js). for styleing this time I used styled components.",
+    desc: "This is Youtube-clone project build with MERN(Mongo DB, Express.js , React.js , Node.js). for styleing this time I used styled components. for media uploads and authentication we used Firebase and JWT this time.",
     url: "https://videostube.herokuapp.com/"
 },
 {
@@ -15,7 +15,8 @@ const cards = [{
     id: 3,
     name: "project 3",
     img: "/portfolio/mock3.png",
-    desc: "description about this project 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ratione at distinctio totam explicabo eos, dolorum voluptatem labore incidunt, deleniti sint obcaecati velit ipsa perferendis officia a qui impedit veniam!",
+    desc: "This is just a small next.js TODO List app build with next.js and MongoDB.",
+    url:"https://todo-five-chi.vercel.app/"
 },
 {
     id: 4,
