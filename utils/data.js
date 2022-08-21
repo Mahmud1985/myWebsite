@@ -9,7 +9,7 @@ const cards = [{
     id: 2,
     name: "project 2",
     img: "/portfolio/mock2.png",
-    desc: "description about this project 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ratione at distinctio totam explicabo eos, dolorum voluptatem labore incidunt, deleniti sint obcaecati velit ipsa perferendis officia a qui impedit veniam!",
+    desc: "This project is a place holder for new MERN or Next.js - MongoDB project.",
 },
 {
     id: 3,
