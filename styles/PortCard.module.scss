@@ -1,0 +1,46 @@
+@import "./Variables.module.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 45%;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    margin: 5px;
+    font-family: $newFont;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.imgContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vh;
+    min-width: 40vw;
+    min-height: 40vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .imgContainer {
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: -30vh 0;
+    }
+}
